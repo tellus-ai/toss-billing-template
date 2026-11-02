@@ -1,0 +1,40 @@
+{
+  "name": "subscription-billing-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.19.0"
+  },
+  "scripts": {
+    "dev": "vite --mode preview",
+    "dev:server": "vite",
+    "build": "vite build",
+    "build:preview": "vite build --mode preview",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@tosspayments/tosspayments-sdk": "^2.10.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.18.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "fast-check": "^4.10.2",
+    "globals": "^16.5.0",
+    "typescript": "~5.9",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^7.3.7",
+    "vitest": "^3.2.7"
+  }
+}
